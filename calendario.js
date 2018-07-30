@@ -39,11 +39,17 @@ jQuery(document).ready(function($) {
         }
     }
   }
-}); 	
-})
-jQuery(document).ready(function($) {
+});
 $ (id) .eventCalendar ({
+  eventsjson: 'archivo.json',
+  locales: 'json / locale.es.php'
+}); 
+ $ (id) .eventCalendar ({
   eventsjson: 'archivo.json',
   jsonDateFormat: 'humano'
 });
-}
+$ (id) .eventCalendar ({
+  eventsjson: 'archivo.json',
+  dateFormat: 'dddd MM-D-YYYY'
+});
+})
